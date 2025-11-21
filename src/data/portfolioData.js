@@ -1,3 +1,5 @@
+import fitIAImage from '@/images/FitIA.png';
+
 export const portfolioData = {
   hero: {
     // ¡CAMBIA ESTO!
@@ -32,7 +34,7 @@ export const portfolioData = {
       technologies: ["Node.js", "Vuetify", "Vue.js", "MySQL", "AI", "REST API", "WebSockets"],
       github: "https://github.com/tu-usuario-github/proyecto-estrella",
       demo: "https://demo.tuproyecto.com", // Pon null si no tienes demo
-      image: "https://picsum.photos/seed/proyecto1/600/400" // URL de una imagen (usa picsum para probar)
+      image: fitIAImage
     },
     {
       id: 2,
