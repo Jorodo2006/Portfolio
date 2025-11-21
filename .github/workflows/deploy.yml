@@ -1,0 +1,39 @@
+name: Desplegar Vue a Producción
+
+on:
+  push:
+    branches:
+      - main  # O 'master', según como se llame tu rama principal
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Descargar el código del repositorio
+      - name: 📥 Checkout del código
+        uses: actions/checkout@v4
+
+      # 2. Preparar Node.js
+      - name: 🟢 Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Usa la versión que necesite tu proyecto
+
+      # 3. Instalar dependencias y construir (Build)
+      - name: 🔨 Instalar y Construir
+        run: |
+          npm install
+          npm run build
+
+      # 4. Copiar la carpeta 'dist' al servidor
+      - name: 🚀 Subir archivos al servidor
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          port: 22
+          source: "dist/*"             # Qué carpeta queremos copiar
+          target: ${{ secrets.TARGET_DIR }} # A dónde va en tu servidor
+          strip_components: 1          # Evita crear una carpeta 'dist' dentro del servidor, solo copia el contenido
