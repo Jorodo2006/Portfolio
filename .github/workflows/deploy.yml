@@ -37,3 +37,6 @@ jobs:
           source: "dist/*"
           target: ${{ secrets.TARGET_DIR }}
           strip_components: 1   # Evita crear una carpeta 'dist' dentro del servidor, solo copia el contenido
+
+
+          #test2
