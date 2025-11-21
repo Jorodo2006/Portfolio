@@ -32,8 +32,8 @@ export const portfolioData = {
       title: "FitIA",
       description: "FitAI es una plataforma de juegos de fitness multijugador en tiempo real que transforma el ejercicio físico en una experiencia competitiva. Los usuarios pueden crear o unirse a salas de juego, realizar ejercicios físicos mientras son monitorizados por un modelo de aprendizaje automático (ML) en el navegador y competir contra otros jugadores en sesiones sincronizadas de 60 segundos.",
       technologies: ["Node.js", "Vuetify", "Vue.js", "MySQL", "AI", "REST API", "WebSockets"],
-      github: "https://github.com/tu-usuario-github/proyecto-estrella",
-      demo: "https://demo.tuproyecto.com", // Pon null si no tienes demo
+      github: "https://github.com/Jorodo2006/FitIA",
+      demo: "https://jordird.com/fitia",
       image: fitIAImage
     },
     {
