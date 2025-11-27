@@ -4,7 +4,7 @@
       dark
       class="d-flex align-center justify-center text-center"
       height="100vh"
-      style="background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);"
+      style="background: linear-gradient(135deg, #000000, #311b92, #000000);"
     >
       <v-container>
         <h1 class="text-h2 text-md-h1 font-weight-bold mb-4">{{ hero.name }}</h1>

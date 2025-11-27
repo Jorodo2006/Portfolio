@@ -1,5 +1,5 @@
 <template>
-    <v-sheet id="about" color="grey-lighten-4" class="py-16">
+    <v-sheet id="about" color="background" class="py-16">
       <v-container>
         <h2 class="text-h3 text-center font-weight-bold mb-10">Sobre Mí</h2>
         <v-row justify="center">

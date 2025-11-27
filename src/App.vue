@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar color="grey-darken-4" dark fixed app>
+    <v-app-bar color="surface" elevation="2">
       <v-container class="d-flex align-center">
         <v-toolbar-title class="font-weight-bold">{{ portfolioData.hero.name }}</v-toolbar-title>
         <v-spacer></v-spacer>
@@ -17,7 +17,7 @@
       </v-container>
     </v-app-bar>
 
-    <v-navigation-drawer v-model="drawer" app temporary location="right" dark color="grey-darken-3">
+    <v-navigation-drawer v-model="drawer" app temporary location="right" color="surface">
       <v-list dense>
         <v-list-item link @click="scrollTo('hero'); drawer = false;">
           <v-list-item-title>Inicio</v-list-item-title>
@@ -45,7 +45,7 @@
       <ContactSection :contact="portfolioData.contact" />
     </v-main>
 
-    <v-footer color="grey-darken-4" dark class="py-4">
+    <v-footer color="surface" class="py-4">
       <v-container class="text-center">
         <p class="mb-0">&copy; {{ new Date().getFullYear() }} {{ portfolioData.hero.name }}. Todos los derechos reservados.</p>
       </v-container>

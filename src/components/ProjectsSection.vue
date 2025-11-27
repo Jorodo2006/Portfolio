@@ -1,10 +1,10 @@
 <template>
-    <v-sheet id="projects" color="grey-lighten-4" class="py-16">
+    <v-sheet id="projects" color="background" class="py-16">
       <v-container>
         <h2 class="text-h3 text-center font-weight-bold mb-10">Proyectos</h2>
         <v-row>
           <v-col cols="12" md="6" lg="4" v-for="project in projects" :key="project.id">
-            <v-card class="h-100 d-flex flex-column" elevation="5">
+            <v-card class="h-100 d-flex flex-column" color="surface" elevation="5">
               <v-img :src="project.image" height="250px" cover>
                 <template v-slot:placeholder>
                   <v-row class="fill-height ma-0" align="center" justify="center">

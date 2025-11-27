@@ -1,10 +1,10 @@
 <template>
-    <v-sheet id="skills" color="grey-darken-3" dark class="py-16">
+    <v-sheet id="skills" color="background" dark class="py-16">
       <v-container>
         <h2 class="text-h3 text-center font-weight-bold mb-10">Tecnologías</h2>
         <v-row>
           <v-col cols="12" sm="6" lg="3">
-            <v-card class="h-100" color="grey-darken-2" elevation="5">
+            <v-card class="h-100" color="surface" elevation="5">
               <v-card-title class="text-h5">
                 <v-icon color="primary" left>mdi-desktop-mac</v-icon>
                 Frontend
@@ -17,7 +17,7 @@
             </v-card>
           </v-col>
           <v-col cols="12" sm="6" lg="3">
-            <v-card class="h-100" color="grey-darken-2" elevation="5">
+            <v-card class="h-100" color="surface" elevation="5">
               <v-card-title class="text-h5">
                 <v-icon color="success" left>mdi-server</v-icon>
                 Backend
@@ -30,7 +30,7 @@
             </v-card>
           </v-col>
           <v-col cols="12" sm="6" lg="3">
-            <v-card class="h-100" color="grey-darken-2" elevation="5">
+            <v-card class="h-100" color="surface" elevation="5">
               <v-card-title class="text-h5">
                 <v-icon color="warning" left>mdi-database</v-icon>
                 Bases de Datos
@@ -43,7 +43,7 @@
             </v-card>
           </v-col>
           <v-col cols="12" sm="6" lg="3">
-            <v-card class="h-100" color="grey-darken-2" elevation="5">
+            <v-card class="h-100" color="surface" elevation="5">
               <v-card-title class="text-h5">
                 <v-icon color="info" left>mdi-cellphone-link</v-icon>
                 Multiplataforma & Herramientas
